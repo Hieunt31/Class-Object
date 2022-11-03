@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <canvas id="paint" height="500" width="500"></canvas>
+    <script>
+        class Circle {
+            radius;
+            color;
+            constructor(x, y) {
+                this.radius = x;
+                this.color = y;
+            }
+            getRadius() {
+                return this.radius;
+            }
+
+            getArea() {
+                return Math.PI * this.radius * this.radius
+            }
+            DrawCircle() {
+                let draw = document.getElementById("paint").getContext("2d");
+                function kaku(doc, ngang, this.radius, this.color) {
+                    ctx.fillstyle = 'rgb1';
+                    ctx.beginPath();
+                    ctx.arc(doc, ngang, bankinh,, 0, 2 * Math.PI);
+                    ctx.fill();
+                }
+
+                kaku(200, 100, 50, 200);
+            }
+        }
+
+        let circle1 = new Circle(5, 'Đỏ');
+        alert(circle1.getArea());
+        let circle2 = new Circle(6, 'Vàng');
+
+
+
+    </script>
+</body>
+
+</html>
